@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
@@ -15,6 +16,8 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
+/* Front Routes */
+
 Route::name('front.')->group(function () {
     Route::view('/', 'front.index')->name('index');
     Route::view('/about', 'front.about')->name('about');
@@ -22,24 +25,22 @@ Route::name('front.')->group(function () {
     Route::view('/contact', 'front.contact')->name('contact');
 });
 
+/* Admin Routes */
+
 Route::name('admin.')->prefix(LaravelLocalization::setLocale() . '/admin')->middleware([
     'localeSessionRedirect',
     'localizationRedirect', 'localeViewPath'
 ])->group(function () {
 
     Route::middleware('auth')->group(function () {
+        //=========================ADMIN HOME PAGE
         Route::view('/', 'admin.index')->name('index');
+
+        //==========================SERVICES
+        Route::controller(ServiceController::class)->group(function () {
+            Route::resource('services', ServiceController::class);
+        });
     });
 
     require __DIR__ . '/auth.php';
 });
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
