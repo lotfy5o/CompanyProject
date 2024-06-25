@@ -11,18 +11,16 @@
                 <h2 class="h5 page-title">{{__('keywords.services')}}</h2>
 
                 <div class="page-title-right">
-                    <a href="{{ route('admin.services.create') }}" class="btn btn-sm btn-primary">
-                        {{__('keywords.add_new')}}
-                    </a>
+
+                    <x-action-button href="{{ route('admin.services.create') }}" type="create"></x-action-button>
+
                 </div>
             </div>
 
             <div class="card shadow">
                 <div class="card-body">
 
-                    @if (session('success'))
-                    <div class="alert alert-success">{{ session('success') }}</div>
-                    @endif
+                    <x-success-alert></x-success-alert>
 
                     <table class="table table-hover">
                         <thead>
@@ -43,15 +41,19 @@
                                     <i class="{{ $service->icon }} fa-2x"></i>
                                 </td>
                                 <td>
-                                    <a href="{{ route('admin.services.edit', ['service' => $service]) }}"
-                                        class="btn btn-sm btn-success">
-                                        <i class="fe fe-edit fa-2x"></i>
-                                    </a>
-                                    <a href="{{ route('admin.services.show', ['service' => $service]) }}"
-                                        class="btn btn-sm btn-primary">
-                                        <i class="fe fe-eye fa-2x"></i>
-                                    </a>
-                                    <form action="{{ route('admin.services.destroy', ['service' => $service]) }}"
+
+                                    <x-action-button href="{{ route('admin.services.edit', ['service' => $service]) }}"
+                                        type="edit"></x-action-button>
+
+                                    <x-action-button href="{{ route('admin.services.show', ['service' => $service]) }}"
+                                        type="show"></x-action-button>
+
+                                    <x-delete-button
+                                        href="{{ route('admin.services.destroy', ['service' => $service]) }}"
+                                        id="{{ $service->id }}">
+                                    </x-delete-button>
+
+                                    {{-- <form action="{{ route('admin.services.destroy', ['service' => $service]) }}"
                                         method="POST" class="d-inline" id="deleteForm-{{ $service->id }}">
                                         @csrf
                                         @method('DELETE')
@@ -59,17 +61,13 @@
                                             onclick="confirmDelete({{ $service->id }})">
                                             <i class="fe fe-trash fa-2x"></i>
                                         </button>
-                                    </form>
+                                    </form> --}}
 
                                 </td>
                             </tr>
                             @endforeach
                             @else
-                            <tr>
-                                <td colspan='4'>
-                                    <div class="alert alert-danger">{{__('keywords.no_records_found')}}</div>
-                                </td>
-                            </tr>
+                            <x-empty-alert></x-empty-alert>
                             @endif
 
                         </tbody>
