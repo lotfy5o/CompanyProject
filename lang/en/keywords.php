@@ -22,6 +22,7 @@ return [
     'deleted_successfully' => 'Record Deleted Successfully',
     'created_successfully' => 'Record Created Successfully',
     'no_records_found' => 'No Records Are Found',
+    'email' => 'Email',
 
     // service page
     'services' => 'Services',
@@ -49,8 +50,12 @@ return [
     'message' => 'Message',
     'show_message' => 'Show Message',
     'name' => 'Name',
-    'email' => 'Email',
     'subject' => 'Subject',
+
+    // subscriber page
+    'subscribers' => 'Subscribers',
+    'subscriber' => 'Subscriber',
+
 
 
 

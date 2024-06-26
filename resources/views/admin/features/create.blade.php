@@ -13,7 +13,7 @@
             <div class="card shadow">
                 <div class="card-body">
 
-                    <form action="{{ route('admin.services.store') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('admin.features.store') }}" method="post" enctype="multipart/form-data">
 
                         @csrf
                         <div class="row">
