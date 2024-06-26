@@ -47,6 +47,11 @@ Route::name('admin.')->prefix(LaravelLocalization::setLocale() . '/admin')->midd
         Route::controller(FeatureController::class)->group(function () {
             Route::resource('features', FeatureController::class);
         });
+
+        //==========================MESSAGES
+        Route::controller(MessageController::class)->group(function () {
+            Route::resource('messages', MessageController::class)->only(['index', 'show', 'destroy']);
+        });
     });
 
     require __DIR__ . '/auth.php';

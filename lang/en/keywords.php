@@ -44,5 +44,14 @@ return [
     'show_feature' => 'Show Feature',
     'edit_feature' => 'Edit Feature',
 
+    // message page
+    'messages' => 'Messages',
+    'message' => 'Message',
+    'show_message' => 'Show Message',
+    'name' => 'Name',
+    'email' => 'Email',
+    'subject' => 'Subject',
+
+
 
 ];
