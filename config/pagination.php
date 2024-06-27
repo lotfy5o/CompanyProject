@@ -3,5 +3,5 @@
 
 return [
 
-    'count' => '10',
+    'count' => '8',
 ];

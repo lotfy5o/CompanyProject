@@ -57,6 +57,19 @@ return [
     'subscriber' => 'Subscriber',
 
 
+    // testimonials page
+    'testimonials' => 'Testimonials',
+    'add_new_testimonial' => 'Add New Testimonial',
+    'show_testimonial' => 'Show Testimonial',
+    'edit_testimonial' => 'Edit Testimonial',
+    'name' => 'Name',
+    'position' => 'Position',
+    'image' => 'Image',
+
+    // companies page
+    'companies' => 'Companies',
+    'company' => 'Company',
+    'add_new_company' => 'Add New Company',
 
 
 ];

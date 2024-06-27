@@ -42,6 +42,9 @@
             {{-- Subscribers --}}
             <x-sidebar-tab href="{{ route('admin.subscribers.index') }}" icon="fe-users"
                 name="{{ __('keywords.subscribers') }}"></x-sidebar-tab>
+            {{-- Testimonials --}}
+            <x-sidebar-tab href="{{ route('admin.testimonials.index') }}" icon="fe-message-square"
+                name="{{ __('keywords.testimonials') }}"></x-sidebar-tab>
         </ul>
 
     </nav>
