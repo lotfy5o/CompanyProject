@@ -70,6 +70,8 @@ return [
     'companies' => 'Companies',
     'company' => 'Company',
     'add_new_company' => 'Add New Company',
+    'edit_company' => 'Edit Company',
+    'show_company' => 'Show Company',
 
 
 ];
