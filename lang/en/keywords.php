@@ -73,5 +73,17 @@ return [
     'edit_company' => 'Edit Company',
     'show_company' => 'Show Company',
 
+    // settings page
+    'settings' => 'Settings',
+    'edit_setting' => 'Edit Settings',
+    'address' => 'Address',
+    'phone' => 'phone',
+    'youtube' => 'Youtube',
+    'linkedin' => 'Linkedin',
+    'twitter' => 'Twitter',
+    'facebook' => 'Facebook',
+    'instagram' => 'Instagram',
+
+
 
 ];

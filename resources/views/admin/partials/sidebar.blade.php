@@ -45,9 +45,12 @@
             {{-- Testimonials --}}
             <x-sidebar-tab href="{{ route('admin.testimonials.index') }}" icon="fe-message-square"
                 name="{{ __('keywords.testimonials') }}"></x-sidebar-tab>
-            {{-- Testimonials --}}
+            {{-- Companies --}}
             <x-sidebar-tab href="{{ route('admin.companies.index') }}" icon="fe-briefcase"
                 name="{{ __('keywords.companies') }}"></x-sidebar-tab>
+            {{-- Settings --}}
+            <x-sidebar-tab href="{{ route('admin.settings.index') }}" icon="fe-settings"
+                name="{{ __('keywords.settings') }}"></x-sidebar-tab>
         </ul>
 
     </nav>
