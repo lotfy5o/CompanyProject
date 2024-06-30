@@ -7,7 +7,7 @@ return [
 
     // login page translation
     'sign_in' => 'تسجيل الدخول',
-    'email' => 'البريد الإلكتروني',
+    // 'email' => 'البريد الإلكتروني',
     'passwrod' => 'كلمة المرور',
     'remember' => 'تذكرني',
     'login' => 'تسجيل الدخول',
@@ -23,6 +23,7 @@ return [
     'icon' => 'الرموز',
     'actions' => 'الإجراءات',
     'no_records_found' => 'لا يوجد خدمات',
-    'add_new' => 'أضف خدمة جديدة'
+    'add_new' => 'أضف خدمة جديدة',
+    'add_new_service' => 'أضف '
 
 ];

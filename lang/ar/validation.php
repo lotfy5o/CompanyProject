@@ -45,7 +45,7 @@ return [
     'distinct' => 'للحقل :attribute قيمة مُكرّرة.',
     'doesnt_end_with' => 'حقل :attribute يجب ألا ينتهي بواحدة من القيم التالية: :values.',
     'doesnt_start_with' => 'حقل :attribute يجب ألا يبدأ بواحدة من القيم التالية: :values.',
-    'email' => 'يجب أن يكون :attribute عنوان بريد إلكتروني صحيح البُنية',
+    // 'email' => 'يجب أن يكون :attribute عنوان بريد إلكتروني صحيح البُنية',
     'ends_with' => 'الـ :attribute يجب ان ينتهي بأحد القيم التالية :value.',
     'enum' => 'حقل :attribute غير صحيح',
     'exists' => 'حقل :attribute لاغٍ',

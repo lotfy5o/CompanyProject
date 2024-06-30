@@ -25,11 +25,11 @@ class UpdateSettingRequest extends FormRequest
             'address' => 'required|string',
             'phone' => 'required',
             'email' => 'required|email',
-            'linkedin' => 'required|url',
-            'twitter' => 'required|url',
-            'youtube' => 'required|url',
-            'facebook' => 'required|url',
-            'instagram' => 'required|url',
+            'linkedin' => 'nullable|url',
+            'twitter' => 'nullable|url',
+            'youtube' => 'nullable|url',
+            'facebook' => 'nullable|url',
+            'instagram' => 'nullable|url',
         ];
     }
 
