@@ -3,6 +3,7 @@
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
@@ -83,6 +84,10 @@ Route::name('admin.')->prefix(LaravelLocalization::setLocale() . '/admin')->midd
         //==========================SETTINGS
         Route::controller(SettingController::class)->group(function () {
             Route::resource('settings', SettingController::class);
+        });
+        //==========================MEMBERS
+        Route::controller(MemberController::class)->group(function () {
+            Route::resource('members', MemberController::class);
         });
     });
 

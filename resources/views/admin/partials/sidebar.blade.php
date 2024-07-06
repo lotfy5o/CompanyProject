@@ -51,6 +51,9 @@
             {{-- Settings --}}
             <x-sidebar-tab href="{{ route('admin.settings.index') }}" icon="fe-settings"
                 name="{{ __('keywords.settings') }}"></x-sidebar-tab>
+            {{-- Members --}}
+            <x-sidebar-tab href="{{ route('admin.members.index') }}" icon="fe-user" name="{{ __('keywords.members') }}">
+            </x-sidebar-tab>
         </ul>
 
     </nav>

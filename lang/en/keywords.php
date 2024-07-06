@@ -84,6 +84,12 @@ return [
     'facebook' => 'Facebook',
     'instagram' => 'Instagram',
 
+    // members page
+    'members' => 'Members',
+    'edit_member' => 'Edit Member',
+    'add_new_member' => 'Add New Member',
+    'show_member' => 'Show Member',
+
 
 
 ];
