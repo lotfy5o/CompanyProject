@@ -9,23 +9,28 @@
                 <div class="d-flex pt-2">
 
                     @if($settings->twitter)
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="{{ $settings->twitter }}"><i
+                            class="fab fa-twitter"></i></a>
                     @endif
 
                     @if($settings->facebook)
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="{{ $settings->facebook }}"><i
+                            class="fab fa-facebook-f"></i></a>
                     @endif
 
                     @if($settings->youtube)
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="{{ $settings->youtube }}"><i
+                            class="fab fa-youtube"></i></a>
                     @endif
 
                     @if($settings->instagram)
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="{{ $settings->instagram }}"><i
+                            class="fab fa-instagram"></i></a>
                     @endif
 
                     @if($settings->linkedin)
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="{{ $settings->linkedin }}"><i
+                            class="fab fa-linkedin-in"></i></a>
                     @endif
                 </div>
             </div>
